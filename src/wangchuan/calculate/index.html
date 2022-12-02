@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>忘川风华录伤害计算</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<script src="calc.js"></script>
+
+<div class="header">
+	<h1>忘川风华录数值计算</h1>
+</div>
+
+<div class="total_field">
+	<h4>伤害计算</h4>
+</div>
+
+<div class="total_field">
+	<div class="input">
+		<div class="left">
+			<p><label for="attack">攻击方攻击</label><input id="attack" type="text"></p>
+			<p><label for="strike_val">攻击方暴击强度</label><input id="strike_val" type="text"></p>
+			<p><label for="strike_mul">攻击方暴击伤害(%)</label><input id="strike_mul" type="text"></p>
+			<p><label for="multiply">攻击倍率(%)</label><input id="multiply" type="text"></p>
+			<p><label for="attack_buff">攻击增减(%)</label><input id="attack_buff" type="text"></p>
+		</div>
+		<div class="right">
+			<p><label for="defend">防御方防御</label><input id="defend" type="text"></p>
+			<p><label for="strike_def">防御方暴击抵抗</label><input id="strike_def" type="text"></p>
+			<p><label for="d_strike_rate">暴击率增减(%)</label><input id="d_strike_rate" type="text"></p>
+			<p><label for="d_damage_rate">伤害增减(%)</label><input id="d_damage_rate" type="text"></p>
+			<p><label for="defend_buff">防御增减(%)</label><input id="defend_buff" type="text"></p>
+		</div>
+	</div>
+</div>
+
+<div class="total_field">
+	<p>
+		<button id="submit_damage" type="button" onclick="calc_damage()" style="width: 80pt">计算</button>
+	</p>
+</div>
+
+<div class="total_field">
+	<p id="result_damage"></p>
+</div>
+
+<div class="total_field">
+	<h4>控制命中计算</h4>
+</div>
+
+<div class="total_field">
+	<div class="input">
+		<div class="left">
+			<p><label for="control_val">攻击方效果命中(%)</label><input id="control_val" type="text"></p>
+			<p><label for="d_control_val">效果命中增减(%)</label><input id="d_control_val" type="text"></p>
+			<p><label for="base_rate">基础概率(%)</label><input id="base_rate" type="text"></p>
+		</div>
+		<div class="right">
+			<p><label for="control_def">防御方效果抵抗(%)</label><input id="control_def" type="text"></p>
+			<p><label for="d_control_def">效果抵抗增减(%)</label><input id="d_control_def" type="text"></p>
+		</div>
+	</div>
+</div>
+
+<div class="total_field">
+	<p>
+		<button id="submit_control_rate" type="button" onclick="calc_control_rate()" style="width: 80pt">计算</button>
+	</p>
+</div>
+
+<div class="total_field">
+	<p id="result_control_rate"></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+.header {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.input {
+    width: 50%;
+    float: left;
+    position: relative;
+    left: 25%;
+    text-align: center;
+}
+
+.left, .right {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.total_field {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
